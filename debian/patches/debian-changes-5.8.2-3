@@ -1,0 +1,80 @@
+Description: Upstream changes introduced in version 5.8.2-3
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ dwm (5.8.2-3) unstable; urgency=low
+ .
+   * New maintainer
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Kai Hendry <hendry@iki.fi>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+--- dwm-5.8.2.orig/config.def.h
++++ dwm-5.8.2/config.def.h
+@@ -46,7 +46,7 @@ static const Layout layouts[] = {
+ 
+ /* commands */
+ static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
+-static const char *termcmd[]  = { "uxterm", NULL };
++static const char *termcmd[]  = { "x-terminal-emulator", NULL };
+ 
+ static Key keys[] = {
+ 	/* modifier                     key        function        argument */
+--- /dev/null
++++ dwm-5.8.2/config.h
+@@ -0,0 +1,41 @@
++/* appearance */
++static const char font[]            = "fixed";
++static const char normbordercolor[] = "#cccccc";
++static const char normbgcolor[]     = "#cccccc";
++static const char normfgcolor[]     = "#000000";
++static const char selbordercolor[]  = "#0066ff";
++static const char selbgcolor[]      = "#0066ff";
++static const char selfgcolor[]      = "#000000";
++static unsigned int borderpx        = 0;
++static unsigned int snap            = 32;
++static Bool showbar                 = False;
++static Bool topbar                  = False;
++
++/* tagging */
++static const char *tags[] = { "web" };
++
++static Rule rules[] = {
++	{0}
++};
++
++/* layout(s) */
++static float mfact      = 0.55;
++static Bool resizehints = False; /* False means respect size hints in tiled resizals */
++
++Layout layouts[] = {
++	/* symbol		function */
++	{ "[M]",		monocle },
++};
++
++/* key definitions */
++#define MODKEY Mod1Mask
++Key keys[] = { \
++	/* modifier			key		function	argument */ \
++	{ MODKEY|ShiftMask, XK_c,   killclient,     {0} },
++	{ MODKEY,		    XK_q,   killclient,		{0} }, \
++	{ MODKEY,		    XK_F4,  killclient,		{0} }, \
++};
++
++static Button buttons[] = {
++	{0}
++};
