@@ -1,3 +1,15 @@
+dwm (5.9-1) UNRELEASED; urgency=low
+
+  * New Maintainer (Closes: #647088)
+  * Watch file is added
+  * Imported Upstream version 5.9
+  * debian/control
+    + Added myself as maintainer
+    + Vcs-* fields now point to collab-maint git repository
+    + Bumped Standards-Version to 3.9.2
+
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Sat, 05 Nov 2011 00:08:10 +0530
+
 dwm (5.8.2-4) unstable; urgency=high
 
   * Fix "dwm doesn't work, black screen" <fix build script to clean config.h>
