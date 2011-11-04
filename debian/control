@@ -1,16 +1,19 @@
 Source: dwm
 Section: x11
 Priority: optional
-Maintainer: Kai Hendry <hendry@iki.fi>
-Build-Depends: debhelper (>= 8), libx11-dev, libxinerama-dev
-Standards-Version: 3.9.1
+Maintainer: Vasudev Kamath <kamathvasudev@gmail.com>
+Build-Depends: debhelper (>= 8),
+               libx11-dev,
+               libxinerama-dev
+Standards-Version: 3.9.2
 Homepage: http://www.suckless.org/
-Vcs-Browser: http://git.webconverger.org/?p=dwm
-Vcs-Git: git://webconverger.org/git/public/dwm
+Vcs-Git: git://anonscm.debian.org/collab-maint/dwm.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/dwm.git;a=summary
 
 Package: dwm
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
 Recommends: suckless-tools, x11-xserver-utils
 Provides: x-window-manager
 Description: dynamic window manager
