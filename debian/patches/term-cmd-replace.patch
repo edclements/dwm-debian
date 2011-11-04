@@ -1,0 +1,11 @@
+--- a/config.def.h
++++ b/config.def.h
+@@ -46,7 +46,7 @@
+ 
+ /* commands */
+ static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
+-static const char *termcmd[]  = { "uxterm", NULL };
++static const char *termcmd[]  = { "x-terminal-emulator", NULL };
+ 
+ static Key keys[] = {
+ 	/* modifier                     key        function        argument */
