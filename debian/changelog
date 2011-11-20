@@ -12,8 +12,10 @@ dwm (5.9-1) unstable; urgency=low
     + Added myself to list of copyright holders for debian folder
     + Cosmetic changes
     + Removed extra license block
+  * debian/rules
+    + Applied a patch provided by David Kalnischkies (Closes: #493819)
 
- -- Vasudev Kamath <kamathvasudev@gmail.com>  Sat, 05 Nov 2011 13:09:11 +0530
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Sun, 20 Nov 2011 21:32:50 +0530
 
 dwm (5.8.2-4) unstable; urgency=high
 
