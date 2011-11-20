@@ -1,4 +1,4 @@
-dwm (5.9-1) UNRELEASED; urgency=low
+dwm (5.9-1) unstable; urgency=low
 
   * New Maintainer (Closes: #647088)
   * Watch file is added
@@ -7,8 +7,13 @@ dwm (5.9-1) UNRELEASED; urgency=low
     + Added myself as maintainer
     + Vcs-* fields now point to collab-maint git repository
     + Bumped Standards-Version to 3.9.2
+  * debian/copyright
+    + Added dep5 header
+    + Added myself to list of copyright holders for debian folder
+    + Cosmetic changes
+    + Removed extra license block
 
- -- Vasudev Kamath <kamathvasudev@gmail.com>  Sat, 05 Nov 2011 00:08:10 +0530
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Sat, 05 Nov 2011 13:09:11 +0530
 
 dwm (5.8.2-4) unstable; urgency=high
 
