@@ -2,6 +2,9 @@
 
 SHELL := sh -e
 
+-include /usr/share/dpkg/buildflags.mk
+export CPPFLAGS CFLAGS LDFLAGS
+
 %:
 	dh ${@}
 
