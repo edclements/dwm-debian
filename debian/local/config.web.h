@@ -20,6 +20,7 @@ static Rule rules[] = {
 
 /* layout(s) */
 static float mfact      = 0.55;
+static const int nmaster      = 1;    /* number of clients in master area */
 static Bool resizehints = False; /* False means respect size hints in tiled resizals */
 
 Layout layouts[] = {
