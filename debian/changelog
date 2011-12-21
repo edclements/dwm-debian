@@ -1,3 +1,11 @@
+dwm (6.0-1) unstable; urgency=low
+
+  * Imported Upstream version 6.0
+  * debian/local/config.web.h
+    + Added missing variable 'nmaster'
+
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Wed, 21 Dec 2011 22:15:39 +0530
+
 dwm (5.9-1) unstable; urgency=low
 
   * New Maintainer (Closes: #647088)
