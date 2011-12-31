@@ -2,9 +2,11 @@ dwm (6.0-2) UNRELEASED; urgency=low
 
   * debian/local/config.winkey.h
     + Configuration for using Windows key instead of Alt is added
+  * debian/local/config.maintainer.h
+    + Package maintainers version of configuration file
   * Reverted config.def.h and config.mk to upstream version  
 
- -- Vasudev Kamath <kamathvasudev@gmail.com>  Wed, 28 Dec 2011 23:14:02 +0530
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Sat, 31 Dec 2011 23:01:27 +0530
 
 dwm (6.0-1) unstable; urgency=low
 
