@@ -1,11 +1,11 @@
-dwm (6.0-2) UNRELEASED; urgency=low
+dwm (6.0-2) unstable; urgency=low
 
   * New alternative dwm.winkey is added. This uses windows key as modifier
   * New alternative dwm.maintainers is added. This is the configuration used
-    by package maintainer
+    by the current dwm maintainer
   * Reverted config.def.h and config.mk to upstream version
 
- -- Vasudev Kamath <kamathvasudev@gmail.com>  Sun, 01 Jan 2012 19:09:41 +0530
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Sat, 28 Jan 2012 11:25:09 +0530
 
 dwm (6.0-1) unstable; urgency=low
 
