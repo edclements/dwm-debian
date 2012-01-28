@@ -21,7 +21,8 @@ static const Rule rules[] = {
 	{ "Xfce4-terminal",     NULL,       NULL,       0,            False,       -1 },
 	{ "Iceweasel",          NULL,       NULL,       1 << 1,       False,       -1 },
         { "Vlc",                NULL,       NULL,       1 << 5,       False,       -1 },
-        { "Emacs",              NULL,       NULL,       1 << 3,       False,       -1 }, 
+        { "Emacs",              NULL,       NULL,       1 << 3,       False,       -1 },
+        { "Evince,              NULL",      NULL,       1 << 4,       False,       -1 },
 };
 
 /* layout(s) */
