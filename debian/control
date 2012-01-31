@@ -9,6 +9,7 @@ Standards-Version: 3.9.2
 Homepage: http://www.suckless.org/
 Vcs-Git: git://anonscm.debian.org/collab-maint/dwm.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/dwm.git;a=summary
+DM-Upload-Allowed: yes
 
 Package: dwm
 Architecture: any
