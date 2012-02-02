@@ -5,7 +5,11 @@ dwm (6.0-2) unstable; urgency=low
     by the current dwm maintainer
   * Reverted config.def.h and config.mk to upstream version
 
- -- Vasudev Kamath <kamathvasudev@gmail.com>  Sat, 28 Jan 2012 11:25:09 +0530
+  [Kartik Mistry]
+  * debian/control:
+    + Added 'DM-Upload-Allowed: yes' field.
+
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Thu, 02 Feb 2012 16:39:09 +0530
 
 dwm (6.0-1) unstable; urgency=low
 
