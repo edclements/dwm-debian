@@ -1,3 +1,16 @@
+dwm (6.0-3) unstable; urgency=low
+
+  * debian/patches:
+    + Renamed all patches to contain numbers in their name.
+    + Modified 02-dpkg-buildflags.patch to remove -Os from config.mk
+      to allow DEB_BUILD_OPTIONS=noopt
+    + Added 03-transparent-makefile.patch to make command execution in Makefile
+      visible.
+  * debian/clean:
+    + Remove config.h generated during compiling of package
+
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Sun, 19 Feb 2012 15:32:47 +0530
+
 dwm (6.0-2) unstable; urgency=low
 
   * New alternative dwm.winkey is added. This uses windows key as modifier
