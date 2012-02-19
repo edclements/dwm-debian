@@ -1,10 +1,10 @@
 Description: Modification to allow dpkg-buildflags
- This modification allows the dpkg-buildflags to
- inject compilation flags in addition to vendor
- specific patches
+ This modification allows the dpkg-buildflags to inject compilation
+ flags in addition to vendor specific patches. Also this patch removes
+ -Os from upstream allowing use DEB_BUILD_OPTIONS=noopt
 Author: Vasudev Kamath <kamathvasudev@gmail.com>
 Forwarded: not-needed
-Last-Update: 2011-11-27
+Last-Update: 2012-02-19
 --- a/config.mk
 +++ b/config.mk
 @@ -19,11 +19,11 @@
