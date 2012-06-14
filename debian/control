@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 8),
                libx11-dev,
                libxinerama-dev,
                dpkg-dev (>= 1.16.1.1)
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://www.suckless.org/
 Vcs-Git: git://anonscm.debian.org/collab-maint/dwm.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/dwm.git;a=summary
