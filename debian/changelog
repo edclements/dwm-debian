@@ -1,3 +1,16 @@
+dwm (6.0-4) unstable; urgency=low
+
+  * debian/rules:
+    + Fixed the way dpkg-buildflags were used in rules by removing conditional
+      check on buidlflags.mk
+  * debian/control:
+    + Added dependency on dpkg-dev (>= 1.16.1.1) to remove conditional check for
+      existence of dpkg-buildflags in rules file
+  * debian/local/config.maintainer.h:
+    + Added tag rules for few more applications
+
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Thu, 14 Jun 2012 20:31:20 +0530
+
 dwm (6.0-3) unstable; urgency=low
 
   * debian/patches:
