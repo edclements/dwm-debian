@@ -1,3 +1,11 @@
+dwm (6.0-5) UNRELEASED; urgency=low
+
+  * debian/control
+    + Changed Homepage to http://dwm.suckless.org thanks to David Kalnischkies
+      for pointing out
+
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Fri, 22 Jun 2012 23:34:23 +0530
+
 dwm (6.0-4) unstable; urgency=low
 
   * debian/rules:
