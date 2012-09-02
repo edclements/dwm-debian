@@ -3,8 +3,13 @@ dwm (6.0-5) UNRELEASED; urgency=low
   * debian/control
     + Changed Homepage to http://dwm.suckless.org thanks to David Kalnischkies
       for pointing out
+    + Increased minimum debhelper required to 9
+  * Set debian/compat to 9
+  * debian/rules
+    + Removed hardening related lines. Since dwm package now uses compat level 9
+      hardening will be automagically done by debhelper
 
- -- Vasudev Kamath <kamathvasudev@gmail.com>  Fri, 22 Jun 2012 23:34:23 +0530
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Sun, 02 Sep 2012 20:26:32 +0530
 
 dwm (6.0-4) unstable; urgency=low
 
