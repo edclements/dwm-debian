@@ -1,4 +1,4 @@
-dwm (6.0-5) experimental; urgency=low
+dwm (6.0-5) unstable; urgency=low
 
   * debian/control
     + Changed Homepage to http://dwm.suckless.org thanks to David Kalnischkies
@@ -16,7 +16,7 @@ dwm (6.0-5) experimental; urgency=low
     + Changed tag 1 class to x-terminal-emulator so any terminal conforming to
       this virtual package will be placed in tag 1
 
- -- Vasudev Kamath <kamathvasudev@gmail.com>  Mon, 05 Nov 2012 22:52:26 +0530
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Sat, 11 May 2013 12:26:44 +0530
 
 dwm (6.0-4) unstable; urgency=low
 
