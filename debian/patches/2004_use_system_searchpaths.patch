@@ -1,3 +1,13 @@
+Description: Fix FTBFS on mipsel* due to custom library search paths.
+ This patch removes library search -L/usr/lib and include paths
+ defined by upstream. Since all the libraries and headers needed are
+ available in default path these flags are redundant also since
+ /usr/lib may have different purpose on various architecture like
+ mips* it causes FTBFS. Thanks to YunQiang Su for bringing this up.
+Author: Vasudev Kamath <kamathvasudev@gmail.com>
+Last-Updated: 2013-09-15
+Bug-Debian: http://bugs.debian.org/722765
+
 --- a/config.mk
 +++ b/config.mk
 @@ -7,21 +7,17 @@
