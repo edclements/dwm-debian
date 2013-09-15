@@ -18,7 +18,7 @@ static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* class                     instance    title       tags mask     isfloating   monitor */
-	{ "x-terminal-emulator",     NULL,       NULL,       0,            False,       -1 },
+	{ "xfce4-terminal",          NULL,       NULL,       0,            False,       -1 },
 	{ "Iceweasel",               NULL,       NULL,       1 << 1,       False,       -1 },
         { "Firefox-bin",             NULL,       NULL,       1 << 1,       False,       -1 },
         { "Pidgin",                  NULL,       NULL,       1 << 2,       True,         1 },
