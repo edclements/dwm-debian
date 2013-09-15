@@ -3,7 +3,8 @@ Description: Commands in Maekefile should be visible while execution
  visible to every one when DH_VERBOSE=1
 Author: Vasudev Kamath <kamathvasudev@gmail.com>
 Last-Update: 2012-02-19
-Forwarded: not-needed--- a/Makefile
+Forwarded: not-needed
+--- a/Makefile
 +++ b/Makefile
 @@ -16,45 +16,45 @@
  
