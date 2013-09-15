@@ -1,3 +1,21 @@
+dwm (6.0-6) unstable; urgency=low
+
+  * Introduce a missing new line in patch which makes it unusable.
+    Closes: bug#722994. Thanks to Mats Erik Andersson.
+  * Renamed patches to follow patch tagging micro guidelines
+    debian/patches/README.
+  * Add debian/patches/README documenting patch numbering micro policy.
+  * Strip trailing space in 2001_replace_term_cmd.patch
+  * Add patch 2004 removing reference to custom library paths and include
+    paths, fixing FTBFS on mips*.
+    Closes: bug#722765. Thanks to YunQiang Su.
+  * Update 2001 patch to change rule to use Iceweasel instead of Firefox.
+    Closes: bug#710180. Thanks to Daniel Gazda.
+  * Changed maintainer specific configuration, to use xfce4-terminal in
+    rule specific to terminals instead of x-terminal-emulator.
+
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Sun, 15 Sep 2013 20:34:14 +0530
+
 dwm (6.0-5) unstable; urgency=low
 
   * debian/control
