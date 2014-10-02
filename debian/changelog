@@ -1,3 +1,11 @@
+dwm (6.0-7) unstable; urgency=medium
+
+  * Fix the override file, Thanks to intrigeri for hints.
+  * Bump Standards-Version to 3.9.5, no change required.
+  * Use cgit URL for Vcs-Browser field.
+
+ -- Vasudev Kamath <kamathvasudev@gmail.com>  Thu, 02 Oct 2014 22:21:08 +0530
+
 dwm (6.0-6) unstable; urgency=low
 
   * Introduce a missing new line in patch which makes it unusable.
