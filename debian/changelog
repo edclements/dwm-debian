@@ -1,3 +1,16 @@
+dwm (6.0-8) unstable; urgency=low
+
+  * New Maintainer (Closes: #793985).
+  * debian/control:
+    - Update the Maintainer field with the new maintainer name.
+    - Bump Standards-Version to 3.9.6 (no changes needed).
+    - Use https for the Vcs-Browser field.
+  * debian/copyright:
+    - Add a copyright entry to mention Hugo's work.
+    - Use https for the Format field.
+
+ -- Hugo Lefeuvre <hle@debian.org>  Fri, 25 Sep 2015 16:14:43 +0200
+
 dwm (6.0-7) unstable; urgency=medium
 
   * Fix the override file, Thanks to intrigeri for hints.
