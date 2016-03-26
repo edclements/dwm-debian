@@ -1,2 +1,2 @@
 version=3
-http://dl.suckless.org/dwm/dwm-(.*)\.tar\.gz
+http://git.suckless.org/dwm/refs /dwm/snapshot/dwm-(.*)\.tar\.gz
