@@ -1,4 +1,4 @@
-dwm (6.1-1) unstable; urgency=low
+dwm (6.1-1) experimental; urgency=low
 
   * New upstream release. 
   * debian/control:
