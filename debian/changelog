@@ -1,3 +1,29 @@
+dwm (6.1-1) unstable; urgency=low
+
+  * New upstream release. 
+  * debian/control:
+    - Bump Standards-Version to 3.9.7.
+    - Add a dependency on libxft-dev and libfreetype6-dev to match 
+      new release requirements.
+    - Replace uxterm by stterm in the Recommends field to match new release
+      recommendations.
+    - Fix broken Vcs-Browser field.
+    - Update Vcs-Git field to use an encrypted transport protocol.
+  * debian/copyright:
+    - Update copyright years.
+  * debian/watch:
+    - Change link to point to the official git repository (releases 
+      are more up-to-date there).
+  * debian/patches/*:
+    - Refresh patches for new upstream release.
+  * debian/local/*:
+    - Refresh config files for new upstream release.
+  * debian/rules:
+    - Enable all hardening options to compile as a PIE and add the bindnow
+      flag.
+
+ -- Hugo Lefeuvre <hle@debian.org>  Sun, 27 Mar 2016 15:12:02 +0100
+
 dwm (6.0-8) unstable; urgency=low
 
   * New Maintainer (Closes: #793985).

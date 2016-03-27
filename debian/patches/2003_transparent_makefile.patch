@@ -1,11 +1,11 @@
-Description: Commands in Maekefile should be visible while execution
+Description: Commands in Makefile should be visible while execution
  This patch removes @ from the Makefile so that command execution is
  visible to every one when DH_VERBOSE=1
 Author: Vasudev Kamath <kamathvasudev@gmail.com>
-Last-Update: 2012-02-19
+Last-Update: 2016-03-26
 Forwarded: not-needed
---- a/Makefile
-+++ b/Makefile
+--- a/Makefile	2016-03-26 17:46:10.988905902 +0100
++++ b/Makefile	2016-03-26 18:03:02.847233725 +0100
 @@ -16,45 +16,45 @@
  
  .c.o:
@@ -33,10 +33,10 @@ Forwarded: not-needed
  dist: clean
  	@echo creating dist tarball
 -	@mkdir -p dwm-${VERSION}
--	@cp -R LICENSE Makefile README config.def.h config.mk \
+-	@cp -R LICENSE TODO BUGS Makefile README config.def.h config.mk \
 +	mkdir -p dwm-${VERSION}
-+	cp -R LICENSE Makefile README config.def.h config.mk \
- 		dwm.1 ${SRC} dwm-${VERSION}
++	cp -R LICENSE TODO BUGS Makefile README config.def.h config.mk \
+ 		dwm.1 drw.h util.h ${SRC} dwm.png transient.c dwm-${VERSION}
 -	@tar -cf dwm-${VERSION}.tar dwm-${VERSION}
 -	@gzip dwm-${VERSION}.tar
 -	@rm -rf dwm-${VERSION}
@@ -53,9 +53,10 @@ Forwarded: not-needed
 +	cp -f dwm ${DESTDIR}${PREFIX}/bin
 +	chmod 755 ${DESTDIR}${PREFIX}/bin/dwm
  	@echo installing manual page to ${DESTDIR}${MANPREFIX}/man1
- 	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
+-	@mkdir -p ${DESTDIR}${MANPREFIX}/man1
 -	@sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
 -	@chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
++	mkdir -p ${DESTDIR}${MANPREFIX}/man1
 +	sed "s/VERSION/${VERSION}/g" < dwm.1 > ${DESTDIR}${MANPREFIX}/man1/dwm.1
 +	chmod 644 ${DESTDIR}${MANPREFIX}/man1/dwm.1
  
