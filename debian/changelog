@@ -1,3 +1,13 @@
+dwm (6.1-2) unstable; urgency=low
+
+  * Upload to unstable.
+  * debian/control:
+    - Fix broken Vcs-Git link. 
+  * debian/copyright:
+    - Fix broken link in the Format field.
+
+ -- Hugo Lefeuvre <hle@debian.org>  Mon, 28 Mar 2016 11:47:52 +0200
+
 dwm (6.1-1) experimental; urgency=low
 
   * New upstream release. 
