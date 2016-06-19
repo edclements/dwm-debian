@@ -1,3 +1,18 @@
+dwm (6.1-3) unstable; urgency=low
+
+  * debian/control:
+    - Bump Standards-Version to 3.9.8 (no changes needed).
+  * debian/rules:
+    - Make dwm repoducible by sorting header files before processing them
+      (acknowledgements to Reiner Herrmann for the patch) (Closes: #825545).
+  * debian/patches/2004_use_system_searchpaths.patch:
+    - Use HTTPS protocol in the BTS link.
+  * debian/copyright:
+    - Update Format field to match DEP5 recommandations.
+    - Use 'Expat' instead of 'MIT'.
+
+ -- Hugo Lefeuvre <hle@debian.org>  Sun, 19 Jun 2016 13:23:37 +0200
+
 dwm (6.1-2) unstable; urgency=low
 
   * Upload to unstable.

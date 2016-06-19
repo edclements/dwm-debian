@@ -28,5 +28,5 @@ override_dh_auto_install:
 	done
 
 	# Configuring maintainer scripts
-	sed -e "s|@ALTERNATIVES@|$(shell find debian/local/ -name 'config.*.h' | cut -d'.' -f 2 | tr '\n' ' ')|" debian/dwm.postinst.in > debian/dwm.postinst
-	sed -e "s|@ALTERNATIVES@|$(shell find debian/local/ -name 'config.*.h' | cut -d'.' -f 2 | tr '\n' ' ')|" debian/dwm.prerm.in > debian/dwm.prerm
+	sed -e "s|@ALTERNATIVES@|$(shell find debian/local/ -name 'config.*.h' | LC_ALL=C sort | cut -d'.' -f 2 | tr '\n' ' ')|" debian/dwm.postinst.in > debian/dwm.postinst
+	sed -e "s|@ALTERNATIVES@|$(shell find debian/local/ -name 'config.*.h' | LC_ALL=C sort | cut -d'.' -f 2 | tr '\n' ' ')|" debian/dwm.prerm.in > debian/dwm.prerm

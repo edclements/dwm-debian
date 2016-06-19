@@ -6,7 +6,7 @@ Description: Fix FTBFS on mipsel* due to custom library search paths.
  mips* it causes FTBFS. Thanks to YunQiang Su for bringing this up.
 Author: Vasudev Kamath <kamathvasudev@gmail.com>
 Last-Updated: 2016-03-26
-Bug-Debian: http://bugs.debian.org/722765
+Bug-Debian: https://bugs.debian.org/722765
 
 --- a/config.mk	2016-03-26 23:36:45.914814792 +0100
 +++ b/config.mk	2016-03-26 23:37:20.275092945 +0100
