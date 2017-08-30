@@ -11,8 +11,8 @@ static const char selbgcolor[]      = "#0066ff";
 static const char selfgcolor[]      = "#000000";
 static unsigned int borderpx        = 0;
 static unsigned int snap            = 32;
-static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
+static const int showbar            = 0;        /* 0 means no bar */
+static const int topbar             = 0;        /* 0 means bottom bar */
 
 /* tagging */
 static const char *tags[] = { "web" };
@@ -24,7 +24,7 @@ static const Rule rules[] = {
 /* layout(s) */
 static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
-static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
+static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
@@ -37,7 +37,6 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-//static const char *termcmd[]  = { "x-terminal-emulator", NULL };
 
 static Key keys[] = {
     /*  modifier        key     function        argument */ \

@@ -1,3 +1,15 @@
+dwm (6.1-4) unstable; urgency=medium
+
+  * debian/control:
+    - Bump Standards-Version to 4.0.0 (no changes needed).
+    - Update debhelper dependency to >= 10 instead of >= 9.
+  * debian/copyright:
+    - Update copyright years.
+  * Bump compat level to 10.
+  * Revert changes to config.web.h introduced in 6.1-1 (Closes: #857174).
+
+ -- Hugo Lefeuvre <hle@debian.org>  Wed, 30 Aug 2017 12:12:50 +0200
+
 dwm (6.1-3) unstable; urgency=low
 
   * debian/control:

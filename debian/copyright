@@ -19,7 +19,7 @@ Copyright: © 2006-2014 Anselm R Garbe <anselm@garbe.us>
 License: Expat
 
 Files: debian/*
-Copyright: (C) 2015-2016 Hugo Lefeuvre <hle@debian.org>
+Copyright: (C) 2015-2017 Hugo Lefeuvre <hle@debian.org>
            (C) 2011 Vasudev Kamath <kamathvasudev@gmail.com>
            (C) 2010 Kai Hendry <hendry@iki.fi>
            (C) 2006-2010 Daniel Baumann <daniel@debian.org>
