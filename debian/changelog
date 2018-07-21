@@ -1,3 +1,16 @@
+dwm (6.1-5) unstable; urgency=medium
+
+  * debian/control:
+    - Bump Standards-Version to 4.1.5 (no changes needed).
+    - Update debhelper dependency to >= 11 instead of >= 10.
+    - Update Vcs-* fields (Salsa migration).
+  * debian/copyright:
+    - Update copyright years.
+  * Bump compat level to 11.
+  * Bump debian/watch version to 4.
+
+ -- Hugo Lefeuvre <hle@debian.org>  Sat, 21 Jul 2018 10:16:54 -0400
+
 dwm (6.1-4) unstable; urgency=medium
 
   * debian/control:
