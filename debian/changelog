@@ -7,7 +7,8 @@ dwm (6.1-5) unstable; urgency=medium
   * debian/copyright:
     - Update copyright years.
   * Bump compat level to 11.
-  * Bump debian/watch version to 4.
+  * Bump debian/watch version to 4 and use HTTPS protocol.
+  * Get rid of trailing whitespaces in debian/changelog.
 
  -- Hugo Lefeuvre <hle@debian.org>  Sat, 21 Jul 2018 10:16:54 -0400
 
@@ -42,7 +43,7 @@ dwm (6.1-2) unstable; urgency=low
 
   * Upload to unstable.
   * debian/control:
-    - Fix broken Vcs-Git link. 
+    - Fix broken Vcs-Git link.
   * debian/copyright:
     - Fix broken link in the Format field.
 
@@ -50,10 +51,10 @@ dwm (6.1-2) unstable; urgency=low
 
 dwm (6.1-1) experimental; urgency=low
 
-  * New upstream release. 
+  * New upstream release.
   * debian/control:
     - Bump Standards-Version to 3.9.7.
-    - Add a dependency on libxft-dev and libfreetype6-dev to match 
+    - Add a dependency on libxft-dev and libfreetype6-dev to match
       new release requirements.
     - Replace uxterm by stterm in the Recommends field to match new release
       recommendations.
@@ -62,7 +63,7 @@ dwm (6.1-1) experimental; urgency=low
   * debian/copyright:
     - Update copyright years.
   * debian/watch:
-    - Change link to point to the official git repository (releases 
+    - Change link to point to the official git repository (releases
       are more up-to-date there).
   * debian/patches/*:
     - Refresh patches for new upstream release.
