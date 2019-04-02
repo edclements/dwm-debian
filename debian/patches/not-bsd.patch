@@ -1,0 +1,14 @@
+Description: Comment out line for BSD
+Author: Ed Clements <ed.clements@gmail.com>
+Last-Update: 2019-04-02
+--- a/config.mk
++++ b/config.mk
+@@ -18,7 +18,7 @@
+ FREETYPELIBS = -lfontconfig -lXft
+ FREETYPEINC = /usr/include/freetype2
+ # OpenBSD (uncomment)
+-FREETYPEINC = ${X11INC}/freetype2
++#FREETYPEINC = ${X11INC}/freetype2
+ 
+ # includes and libs
+ INCS = -I${X11INC} -I${FREETYPEINC}

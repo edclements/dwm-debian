@@ -1,0 +1,10 @@
+Package: dwm
+Version: 6.1-1
+Architecture: amd64
+Maintainer: Ed Clements <ed.clements@gmail.com>
+Installed-Size: 65
+Depends: libc6 (>= 2.2.5), libfontconfig1 (>= 2.12.6), libx11-6, libxft2 (>> 2.1.1), libxinerama1
+Section: x11
+Priority: optional
+Homepage: http://dwm.suckless.org/
+Description: dynamic window manager
