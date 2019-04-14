@@ -2,7 +2,7 @@ Source: dwm
 Section: x11
 Priority: optional
 Maintainer: Hugo Lefeuvre <hle@debian.org>
-Build-Depends: debhelper (>= 11),
+Build-Depends: debhelper (>= 9),
                libx11-dev,
                libxinerama-dev,
                libxft-dev,
