@@ -4,9 +4,9 @@
 
 /* appearance */
 static const char *fonts[] = {
-	"monospace:size=10"
+	"Hack:pixelsize=16"
 };
-static const char dmenufont[]       = "monospace:size=10";
+static const char dmenufont[]       = "Hack:pixelsize=16";
 #ifdef LIGHT
 static const char normbordercolor[] = "#fdf6e3";
 static const char normbgcolor[]     = "#fdf6e3";
