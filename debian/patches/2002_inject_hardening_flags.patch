@@ -5,19 +5,21 @@ Description: Modification to allow dpkg-buildflags
 Author: Vasudev Kamath <kamathvasudev@gmail.com>
 Forwarded: not-needed
 Last-Update: 2016-03-26
---- a/config.mk	2016-03-26 15:58:16.677180328 +0100
-+++ b/config.mk	2016-03-26 16:17:29.594570899 +0100
+Index: dwm/config.mk
+===================================================================
+--- dwm.orig/config.mk	2020-02-10 18:25:03.614887862 +0000
++++ dwm/config.mk	2020-02-10 18:26:49.295750167 +0000
 @@ -25,10 +25,10 @@
  LIBS = -L${X11LIB} -lX11 ${XINERAMALIBS} ${FREETYPELIBS}
  
  # flags
--CPPFLAGS = -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
-+CPPFLAGS += -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
+-CPPFLAGS = -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
++CPPFLAGS += -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
  #CFLAGS   = -g -std=c99 -pedantic -Wall -O0 ${INCS} ${CPPFLAGS}
 -CFLAGS   = -std=c99 -pedantic -Wall -Wno-deprecated-declarations -Os ${INCS} ${CPPFLAGS}
--LDFLAGS  = -s ${LIBS}
+-LDFLAGS  = ${LIBS}
 +CFLAGS   += -std=c99 -pedantic -Wall -Wno-deprecated-declarations ${INCS} ${CPPFLAGS}
-+LDFLAGS  += -s ${LIBS}
++LDFLAGS  += ${LIBS}
  
  # Solaris
  #CFLAGS = -fast ${INCS} -DVERSION=\"${VERSION}\"

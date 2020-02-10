@@ -8,9 +8,11 @@ Description: Modified command and rules to use Debian specific tools
 Author: Vasudev Kamath <kamathvasudev@gmail.com>
 Forwarded: not-needed
 Last-Update: 2016-03-25
---- a/config.def.h	2016-03-26 22:54:02.066831758 +0100
-+++ b/config.def.h	2016-03-26 22:54:20.974134262 +0100
-@@ -26,7 +26,7 @@
+Index: dwm/config.def.h
+===================================================================
+--- dwm.orig/config.def.h	2020-02-10 18:23:25.258067736 +0000
++++ dwm/config.def.h	2020-02-10 18:23:53.534305643 +0000
+@@ -28,7 +28,7 @@
  	 */
  	/* class      instance    title       tags mask     isfloating   monitor */
  	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
@@ -19,16 +21,16 @@ Last-Update: 2016-03-25
  };
  
  /* layout(s) */
-@@ -55,7 +55,7 @@
+@@ -57,7 +57,7 @@
  /* commands */
  static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
- static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
+ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 -static const char *termcmd[]  = { "st", NULL };
 +static const char *termcmd[]  = { "x-terminal-emulator", NULL };
  
  static Key keys[] = {
  	/* modifier                     key        function        argument */
-@@ -110,4 +110,3 @@
+@@ -112,4 +112,3 @@
  	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
  	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
  };
