@@ -8,8 +8,10 @@ Author: Vasudev Kamath <kamathvasudev@gmail.com>
 Last-Updated: 2016-03-26
 Bug-Debian: https://bugs.debian.org/722765
 
---- a/config.mk	2016-03-26 23:36:45.914814792 +0100
-+++ b/config.mk	2016-03-26 23:37:20.275092945 +0100
+Index: dwm/config.mk
+===================================================================
+--- dwm.orig/config.mk	2020-02-10 18:46:37.589092116 +0000
++++ dwm/config.mk	2020-02-10 18:46:37.585092084 +0000
 @@ -7,9 +7,6 @@
  PREFIX = /usr/local
  MANPREFIX = ${PREFIX}/share/man
@@ -30,4 +32,4 @@ Bug-Debian: https://bugs.debian.org/722765
 +LIBS = -lX11 ${XINERAMALIBS} ${FREETYPELIBS}
  
  # flags
- CPPFLAGS += -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
+ CPPFLAGS += -D_DEFAULT_SOURCE -D_BSD_SOURCE -D_POSIX_C_SOURCE=2 -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
