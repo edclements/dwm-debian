@@ -3,10 +3,6 @@
 #define DARK
 
 /* appearance */
-static const char *fonts[] = {
-	"Hack:pixelsize=16"
-};
-static const char dmenufont[]       = "Hack:pixelsize=16";
 #ifdef LIGHT
 static const char normbordercolor[] = "#fdf6e3";
 static const char normbgcolor[]     = "#fdf6e3";
@@ -26,6 +22,15 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+static const char *fonts[] = {
+	"Hack:pixelsize=16"
+};
+static const char dmenufont[]       = "Hack:pixelsize=16";
+static const char *colors[][3]      = {
+       /*               fg         bg         border   */
+       [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
+       [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor },
+};
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
@@ -107,7 +112,7 @@ static Key keys[] = {
 };
 
 /* button definitions */
-/* click can be ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
+/* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },

@@ -1,8 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char *fonts[] = { "fixed" };
-static const char dmenufont[]            = "fixed";
 static const char normbordercolor[] = "#cccccc";
 static const char normbgcolor[]     = "#cccccc";
 static const char normfgcolor[]     = "#000000";
@@ -13,6 +11,13 @@ static unsigned int borderpx        = 0;
 static unsigned int snap            = 32;
 static const int showbar            = 0;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
+static const char *fonts[] = { "fixed" };
+static const char dmenufont[]       = "fixed";
+static const char *colors[][3]      = {
+       /*               fg         bg         border   */
+       [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
+       [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor },
+};
 
 /* tagging */
 static const char *tags[] = { "web" };
@@ -46,7 +51,7 @@ static Key keys[] = {
 };
 
 /* button definitions */
-/* click can be ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
+/* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
     { 0 }
 };
